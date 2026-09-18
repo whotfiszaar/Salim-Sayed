@@ -8,6 +8,7 @@ const NAV_ITEMS = [
   { href: "#expansion", label: "Expansion" },
   { href: "#impact", label: "Impact" },
   { href: "#brands", label: "Brands" },
+  { href: "#insights", label: "Insights" },
   { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" },
 ];
@@ -30,6 +31,8 @@ export function Header() {
     };
   }, [open]);
 
+  const dark = !scrolled && !open;
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 h-16 border-b transition-colors duration-300 ${
@@ -41,11 +44,17 @@ export function Header() {
       <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-5 sm:px-8">
         <a
           href="#top"
-          className="font-display text-[15px] font-bold tracking-tight text-ink"
-          aria-label="Salim Sayed — home"
+          className={`font-display text-[15px] font-bold tracking-tight transition-colors duration-300 ${
+            dark ? "text-cream" : "text-ink"
+          }`}
+          aria-label="Salim Sayed, home"
         >
           SALIM&nbsp;SAYED
-          <span className="ml-2 hidden align-middle text-[10px] font-semibold uppercase tracking-[0.18em] text-mute sm:inline">
+          <span
+            className={`ml-2 hidden align-middle text-[10px] font-semibold uppercase tracking-[0.18em] transition-colors duration-300 sm:inline ${
+              dark ? "text-tint" : "text-mute"
+            }`}
+          >
             Retail Operations
           </span>
         </a>
@@ -56,14 +65,22 @@ export function Header() {
             <a
               key={item.href}
               href={item.href}
-              className="u-link text-[13px] font-medium text-mute transition-colors hover:text-ink"
+              className={`u-link text-[13px] font-medium transition-colors duration-300 ${
+                dark
+                  ? "text-cream/85 hover:text-cream"
+                  : "text-mute hover:text-ink"
+              }`}
             >
               {item.label}
             </a>
           ))}
           <a
             href="#contact"
-            className="rounded-full bg-wine px-4 py-2 text-[13px] font-semibold text-cream transition-colors hover:bg-wine-deep"
+            className={`rounded-full px-4 py-2 text-[13px] font-semibold transition-colors duration-300 ${
+              dark
+                ? "bg-cream text-ink hover:bg-white"
+                : "bg-wine text-cream hover:bg-wine-deep"
+            }`}
           >
             Get in touch
           </a>
@@ -75,7 +92,11 @@ export function Header() {
           aria-label={open ? "Close menu" : "Open menu"}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
-          className="flex h-11 w-11 items-center justify-center rounded-full border border-line bg-cream/80 text-ink md:hidden"
+          className={`flex h-11 w-11 items-center justify-center rounded-full border transition-colors duration-300 md:hidden ${
+            dark
+              ? "border-cream/40 bg-wine/20 text-cream"
+              : "border-line bg-cream/80 text-ink"
+          }`}
         >
           {open ? <X size={19} /> : <Menu size={19} />}
         </button>
@@ -109,10 +130,7 @@ export function Header() {
           <a href="mailto:salimsayed82@gmail.com" className="block hover:text-wine">
             salimsayed82@gmail.com
           </a>
-          <a
-            href="tel:+971585921779"
-            className="block hover:text-wine"
-          >
+          <a href="tel:+971585921779" className="block hover:text-wine">
             +971 58 592 1779
           </a>
         </div>

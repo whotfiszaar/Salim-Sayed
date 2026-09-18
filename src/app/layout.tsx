@@ -14,25 +14,78 @@ const figtree = Figtree({
   weight: ["400", "500", "600"],
 });
 
+const SITE_URL = "https://salimsayed.example.com";
+const TITLE = "Salim Sayed | Retail Operations Leader in Dubai, UAE";
+const DESCRIPTION =
+  "Salim Sayed is a retail operations leader in Dubai with 15+ years of multi-unit store operations, P&L management and market expansion across the GCC and India. 45+ stores launched, AED 130M portfolio, teams of 200+.";
+
 export const metadata: Metadata = {
-  title: "Salim Sayed — Retail Operations Leader, GCC & India",
-  description:
-    "Results-driven Retail Operations Leader with 15+ years directing multi-unit store operations, P&L management, and market expansion across the GCC and India. 45+ stores launched. AED 130M portfolio. Teams of 200+.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: TITLE,
+    template: "%s | Salim Sayed, Retail Operations Leader",
+  },
+  description: DESCRIPTION,
   keywords: [
     "Salim Sayed",
-    "Retail Operations Leader",
-    "Multi-Unit Retail",
-    "GCC Retail Expansion",
-    "P&L Management",
-    "New Store Openings",
-    "Dubai UAE",
+    "Salim Ahmed Sayed",
+    "retail operations leader Dubai",
+    "retail operations manager UAE",
+    "multi-unit retail operations",
+    "GCC retail expansion",
+    "new store opening manager",
+    "P&L management retail",
+    "area manager retail Dubai",
+    "retail manager Life Pharmacy",
+    "Annabelle retail manager",
+    "Forest Essentials regional manager",
+    "store operations GCC",
+    "retail turnaround specialist",
+    "Six Sigma Black Belt retail",
   ],
-  authors: [{ name: "Salim Sayed" }],
+  authors: [{ name: "Salim Sayed", url: "https://www.linkedin.com/in/salim-sayed-93126b62" }],
+  creator: "Salim Sayed",
+  publisher: "Salim Sayed",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "Salim Sayed — Retail Operations Leader",
-    description:
-      "15+ years of multi-unit retail operations, P&L leadership, and market expansion across the GCC and India. 45+ stores launched.",
     type: "profile",
+    url: SITE_URL,
+    siteName: "Salim Sayed Portfolio",
+    title: TITLE,
+    description: DESCRIPTION,
+    locale: "en_US",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Salim Sayed, Retail Operations Leader based in Dubai, UAE",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: TITLE,
+    description: DESCRIPTION,
+    images: ["/og-image.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  category: "professional profile",
+  formatDetection: {
+    telephone: true,
+    email: true,
+    address: true,
   },
 };
 

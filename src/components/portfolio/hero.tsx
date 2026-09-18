@@ -36,7 +36,7 @@ export function Hero() {
           </Reveal>
 
           <Reveal delay={160}>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-cream/85 sm:text-xl">
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-cream/90 sm:text-xl">
               Retail operations leader driving{" "}
               <span className="font-semibold text-cream">sales growth</span>,{" "}
               <span className="font-semibold text-cream">market expansion</span>{" "}
@@ -72,7 +72,7 @@ export function Hero() {
                   <dd className="font-display text-3xl font-bold tracking-[-0.04em] sm:text-[2.6rem]">
                     {stat.value}
                   </dd>
-                  <dd className="mt-1.5 text-[11px] leading-snug font-medium tracking-wide text-cream/70 uppercase">
+                  <dd className="mt-1.5 text-[11px] leading-snug font-medium tracking-wide text-cream/75 uppercase">
                     {stat.label}
                   </dd>
                 </div>
@@ -86,15 +86,15 @@ export function Hero() {
           <div className="portrait-frame relative aspect-square w-full overflow-hidden rounded-[28px] sm:aspect-[4/5]">
             <Image
               src="/salim-portrait.jpg"
-              alt="Black and white portrait of Salim Sayed"
+              alt="Black and white portrait of Salim Sayed, retail operations leader based in Dubai"
               fill
               priority
               sizes="(max-width: 1024px) 90vw, 40vw"
               className="object-cover object-[center_18%]"
             />
           </div>
-          <p className="mt-4 text-right text-[11px] font-medium tracking-[0.18em] text-cream/60 uppercase">
-            Manager, Retail Operations — LIFE Healthcare Group
+          <p className="mt-4 text-right text-[11px] font-medium tracking-[0.18em] text-cream/75 uppercase">
+            Manager, Retail Operations · LIFE Healthcare Group
           </p>
         </Reveal>
       </div>

@@ -4,21 +4,21 @@ const LAUNCHES = [
   {
     num: "30+",
     brand: "LIFE Healthcare Group",
-    period: "2025 — 2026",
+    period: "2025 to 2026",
     detail:
-      "UAE-wide New Store Opening function — 30+ launches delivered end-to-end across the network.",
+      "UAE-wide New Store Opening function, with 30+ launches delivered end-to-end across the network.",
   },
   {
     num: "19",
     brand: "Annabelle · GCC",
-    period: "2019 — 2024",
+    period: "2019 to 2024",
     detail:
-      "Market introduction and operational rollout across UAE, KSA, Kuwait and Qatar — 11 of them in Saudi Arabia.",
+      "Market introduction and operational rollout across the UAE, KSA, Kuwait and Qatar, 11 of them in Saudi Arabia.",
   },
   {
     num: "12",
     brand: "Forest Essentials · India",
-    period: "2011 — 2016",
+    period: "2011 to 2016",
     detail:
       "End-to-end setup, recruitment and commercial launch of luxury stores across West and South India.",
   },
@@ -43,13 +43,13 @@ export function Expansion() {
         <Reveal>
           <div className="flex items-end justify-between gap-6 border-b border-cream/15 pb-6">
             <div>
-              <p className="eyebrow text-tint">02 — Expansion</p>
+              <p className="eyebrow text-tint">02 · Expansion</p>
               <h2 className="mt-2 font-display text-3xl font-bold tracking-[-0.03em] sm:text-4xl lg:text-5xl">
                 Every store, from handover to performing asset.
               </h2>
             </div>
-            <p className="hidden max-w-xs pb-1 text-right text-sm leading-snug text-cream/60 sm:block">
-              Site handover → launch → commercial performance. The full path,
+            <p className="hidden max-w-xs pb-1 text-right text-sm leading-snug text-cream/75 sm:block">
+              Site handover, launch, commercial performance. The full path,
               owned.
             </p>
           </div>
@@ -66,7 +66,7 @@ export function Expansion() {
                 45+
               </p>
               <p className="sr-only">45 plus stores launched</p>
-              <p className="mt-6 font-display text-xl font-semibold tracking-tight text-cream/90 sm:text-2xl">
+              <p className="mt-6 font-display text-xl font-semibold tracking-tight text-cream/95 sm:text-2xl">
                 stores launched across five countries
               </p>
               <p className="mt-3 text-sm font-medium tracking-[0.2em] text-tint uppercase">
@@ -84,7 +84,7 @@ export function Expansion() {
                     <div>
                       <p className="font-display text-lg font-semibold text-cream">
                         {launch.brand}
-                        <span className="ml-2 text-xs font-medium tracking-wider text-cream/50">
+                        <span className="ml-2 text-xs font-medium tracking-wider text-cream/70">
                           {launch.period}
                         </span>
                       </p>
@@ -102,7 +102,7 @@ export function Expansion() {
         {/* Scope chips */}
         <Reveal>
           <div className="flex flex-wrap items-center gap-3 border-t border-cream/15 pt-8">
-            <span className="mr-2 text-[11px] font-semibold tracking-[0.2em] text-cream/60 uppercase">
+            <span className="mr-2 text-[11px] font-semibold tracking-[0.2em] text-cream/70 uppercase">
               Launch scope
             </span>
             {SCOPE.map((item) => (

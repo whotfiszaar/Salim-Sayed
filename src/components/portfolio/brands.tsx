@@ -6,36 +6,36 @@ const BRANDS = [
     icon: HeartPulse,
     name: "LIFE Healthcare Group",
     category: "Pharmacy · Wellness · Skincare",
-    period: "2016 — 2018 · 2025 — Now",
+    period: "2016-2018 · 2025 to Now",
     detail:
-      "AED 130M non-pharma portfolio across premium, prestige and masstige skincare alongside healthcare and wellness categories. UAE-wide network of 200+ retail professionals.",
+      "AED 130M non-pharma portfolio across premium, prestige and masstige skincare alongside healthcare and wellness categories, through the Life Pharmacy retail network of 200+ professionals.",
     tags: ["Retail Operations", "NSO Leadership", "Category Governance"],
   },
   {
     icon: Shirt,
-    name: "Annabelle — Rajan Trading LLC",
+    name: "Annabelle · Rajan Trading LLC",
     category: "Fashion Retail",
-    period: "2019 — 2024",
+    period: "2019 to 2024",
     detail:
       "41 stores across the UAE, KSA, Kuwait and Qatar generating AED 100M annual revenue. Fast-paced regional fashion with a 155+ strong workforce.",
     tags: ["GCC Multi-Unit", "P&L Governance", "SOP Playbooks"],
   },
   {
     icon: Sparkles,
-    name: "Forest Essentials — Estée Lauder",
+    name: "Forest Essentials · Estée Lauder",
     category: "Luxury Skincare",
-    period: "2011 — 2016",
+    period: "2011 to 2016",
     detail:
       "India's luxurious Ayurvedic skincare pioneer. Doubled regional revenue, launched 12 luxury stores and earned 3 consecutive promotions.",
     tags: ["Luxury Retail", "VM Excellence", "Talent Development"],
   },
   {
     icon: Landmark,
-    name: "Early Career — Banking & BPO",
+    name: "Early Career · Banking & BPO",
     category: "Financial Services · Operations",
-    period: "2002 — 2010",
+    period: "2002 to 2010",
     detail:
-      "Corporate Executive at HDFC Bank, then operations leadership roles in BPO environments — the process discipline that still underpins his operating model.",
+      "Corporate Executive at HDFC Bank, then operations leadership roles in BPO environments. The process discipline that still underpins his operating model.",
     tags: ["Process Discipline", "Team Leadership", "Client Operations"],
   },
 ];
@@ -47,7 +47,7 @@ export function Brands() {
         <Reveal>
           <div className="flex items-end justify-between gap-6 border-b border-line pb-6">
             <div>
-              <p className="eyebrow text-wine">04 — Houses & Categories</p>
+              <p className="eyebrow text-wine">04 · Houses & Categories</p>
               <h2 className="mt-2 font-display text-3xl font-bold tracking-[-0.03em] text-ink sm:text-4xl lg:text-5xl">
                 Four houses, one standard
               </h2>

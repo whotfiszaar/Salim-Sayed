@@ -2,7 +2,7 @@ const ITEMS = [
   "Multi-Unit Retail Operations",
   "P&L Leadership",
   "New Store Openings",
-  "Market Expansion — GCC & India",
+  "Market Expansion, GCC & India",
   "Six Sigma Black Belt",
   "Team Leadership & Training",
   "Turnaround Specialist",

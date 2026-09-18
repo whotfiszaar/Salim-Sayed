@@ -8,7 +8,7 @@ export function About() {
         <Reveal>
           <div className="flex items-end justify-between gap-6 border-b border-line pb-6">
             <div>
-              <p className="eyebrow text-wine">06 — About</p>
+              <p className="eyebrow text-wine">06 · About</p>
               <h2 className="mt-2 font-display text-3xl font-bold tracking-[-0.03em] text-ink sm:text-4xl lg:text-5xl">
                 The operator behind the record
               </h2>
@@ -28,13 +28,13 @@ export function About() {
                 15+ years of experience directing multi-unit store operations,
                 P&L management and market expansion across the GCC and India.
                 His career spans fashion retail, pharmacy and wellness retail,
-                and premium luxury skincare — a cross-category view of how
-                operational discipline, visual merchandising and brand
+                and premium luxury skincare, giving him a cross-category view
+                of how operational discipline, visual merchandising and brand
                 execution combine to drive profitable growth.
               </p>
               <p>
                 He has personally led and supported the opening of 45+ retail
-                stores across the UAE, KSA, Kuwait, Qatar and India — building
+                stores across the UAE, KSA, Kuwait, Qatar and India, building
                 the New Store Opening playbooks, recruitment pipelines and
                 cross-functional coordination that take a location from site
                 handover to a fully operational, on-brand store. Alongside
@@ -44,7 +44,7 @@ export function About() {
               </p>
               <p>
                 His operating model treats consistency and customer experience
-                as outcomes of process discipline, not separate initiatives —
+                as outcomes of process discipline, not separate initiatives,
                 from 500 sq. ft. high-street units to 6,500 sq. ft. mall
                 anchors. Standardized inventory allocation, shrinkage controls
                 and visual merchandising keep operations lean and shelves
@@ -64,15 +64,21 @@ export function About() {
                 </h3>
                 <ul className="mt-4 space-y-3 text-[15px] text-ink/85">
                   <li className="flex items-center justify-between gap-3 border-b border-line pb-3">
-                    Six Sigma — Black Belt
+                    Six Sigma · Black Belt
+                    <span className="text-xs font-semibold tracking-wider text-mute uppercase">
+                      Certified
+                    </span>
+                  </li>
+                  <li className="flex items-center justify-between gap-3 border-b border-line pb-3">
+                    Operational Excellence Foundations
                     <span className="text-xs font-semibold tracking-wider text-mute uppercase">
                       Certified
                     </span>
                   </li>
                   <li>
-                    Operational Excellence Foundations
+                    Social Media Marketing Strategy: TikTok and Instagram Reels
                     <span className="ml-2 align-middle text-xs font-semibold tracking-wider text-mute uppercase">
-                      Certified
+                      LinkedIn Learning · 2026
                     </span>
                   </li>
                 </ul>
@@ -102,8 +108,8 @@ export function About() {
               <div className="rounded-2xl bg-wine p-6 text-cream sm:p-7">
                 <p className="eyebrow text-tint">Operating philosophy</p>
                 <p className="mt-3 font-display text-xl leading-snug font-semibold tracking-tight">
-                  “Consistency and customer experience are outcomes of process
-                  discipline — never separate initiatives.”
+                  "Consistency and customer experience are outcomes of process
+                  discipline, never separate initiatives."
                 </p>
               </div>
             </Reveal>

@@ -4,12 +4,12 @@ const IMPACT_STATS = [
   {
     value: "34%",
     label: "Overall commercial growth",
-    detail: "Across a 41-store, AED 100M GCC network — with a 14% LFL growth rate (2022–2023).",
+    detail: "Across a 41-store, AED 100M GCC network, with a 14% LFL growth rate (2022-2023).",
   },
   {
     value: "AED 130M",
     label: "Commercial portfolio managed",
-    detail: "Non-pharma categories across the UAE network — skincare, healthcare and wellness.",
+    detail: "Non-pharma categories across the UAE network, spanning skincare, healthcare and wellness.",
   },
   {
     value: "45+",
@@ -24,9 +24,9 @@ const IMPACT_STATS = [
 ];
 
 const ACHIEVEMENTS = [
-  "Turned around multiple distressed, underperforming outlets through operational audits, staff restructuring and financial turnaround strategies — a repeatable pattern across LIFE Healthcare, Annabelle and Forest Essentials.",
+  "Turned around multiple distressed, underperforming outlets through operational audits, staff restructuring and financial turnaround strategies, a repeatable pattern across LIFE Healthcare, Annabelle and Forest Essentials.",
   "Doubled regional retail revenue at Forest Essentials through data-driven staff placement, local marketing and inventory discipline.",
-  "Authored and institutionalized SOP playbooks that became the operating standard from store inception onward — at three separate organizations.",
+  "Authored and institutionalized SOP playbooks that became the operating standard from store inception onward, at three separate organizations.",
   "Directed regional advertising and promotional campaigns aligned to brand and mall calendars, with a strict focus on marketing ROI.",
   "Partnered with the Red Crescent and local community entities on CSR initiatives that strengthened brand equity and emotional connection.",
 ];
@@ -38,13 +38,13 @@ export function Impact() {
         <Reveal>
           <div className="flex items-end justify-between gap-6 border-b border-line pb-6">
             <div>
-              <p className="eyebrow text-wine">03 — Business Impact</p>
+              <p className="eyebrow text-wine">03 · Business Impact</p>
               <h2 className="mt-2 font-display text-3xl font-bold tracking-[-0.03em] text-ink sm:text-4xl lg:text-5xl">
                 The numbers behind the record
               </h2>
             </div>
             <p className="hidden max-w-xs pb-1 text-right text-sm leading-snug text-mute sm:block">
-              Growth, governance and turnarounds — measured, not claimed.
+              Growth, governance and turnarounds, measured and proven.
             </p>
           </div>
         </Reveal>

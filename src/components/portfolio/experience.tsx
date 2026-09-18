@@ -13,7 +13,7 @@ type Role = {
 
 const ROLES: Role[] = [
   {
-    period: "2025 — Now",
+    period: "2025 to Now",
     company: "LIFE Healthcare Group",
     note: "Manager, Retail Operations",
     title: "Commanding a UAE-wide retail network",
@@ -24,16 +24,16 @@ const ROLES: Role[] = [
       { label: "NSO launches", value: "30+" },
     ],
     points: [
-      "Heading day-to-day retail operations across multiple store formats with a 200+ member team — enforcing financial controls, operational efficiency and SOP compliance.",
+      "Heading day-to-day retail operations across multiple store formats with a 200+ member team, enforcing financial controls, operational efficiency and SOP compliance.",
       "Strategically managing an AED 130M non-pharma commercial portfolio spanning premium, prestige and masstige skincare alongside core healthcare and wellness categories.",
-      "Leading the New Store Opening (NSO) function UAE-wide — operations, visual merchandising, space planning, training and customer experience — for 30+ store launches.",
+      "Leading the New Store Opening (NSO) function UAE-wide, covering operations, visual merchandising, space planning, training and customer experience, for 30+ store launches.",
       "Revitalizing underperforming outlets through local market data and store P&L analytics, strengthening network-wide footprint health.",
     ],
   },
   {
-    period: "2019 — 2024",
+    period: "2019 to 2024",
     company: "Annabelle · Rajan Trading LLC",
-    note: "Retail Manager, Operations — GCC",
+    note: "Retail Manager, Operations, GCC",
     title: "A 41-store fashion network across four nations",
     location: "Dubai, UAE · GCC",
     scope: [
@@ -42,20 +42,20 @@ const ROLES: Role[] = [
       { label: "Growth", value: "34%" },
     ],
     points: [
-      "Held end-to-end operations and P&L accountability for 41 fashion retail stores across the UAE, KSA, Kuwait and Qatar — leading 3 Country Managers, a Regional Trainer and a 155+ store workforce.",
-      "Delivered 34% overall commercial growth alongside a 14% like-for-like (LFL) growth metric (2022–2023) through commercial strategy and disciplined expansion.",
-      "Spearheaded 19 new store openings across the GCC — including 11 stores launched across Saudi Arabia — covering market introduction, site readiness and operational rollout.",
+      "Held end-to-end operations and P&L accountability for 41 fashion retail stores across the UAE, KSA, Kuwait and Qatar, leading 3 Country Managers, a Regional Trainer and a 155+ store workforce.",
+      "Delivered 34% overall commercial growth alongside a 14% like-for-like (LFL) growth metric (2022-2023) through commercial strategy and disciplined expansion.",
+      "Spearheaded 19 new store openings across the GCC, including 11 stores launched across Saudi Arabia, covering market introduction, site readiness and operational rollout.",
       "Authored a company-wide SOP playbook and rescued distressed outposts via deep operational audits, staff restructuring and targeted financial turnarounds.",
     ],
   },
   {
-    period: "2016 — 2018",
+    period: "2016 to 2018",
     company: "LIFE Healthcare Group",
     note: "Area Manager, Operations",
     title: "From high street to mall anchor",
     location: "Dubai, UAE",
     scope: [
-      { label: "Formats", value: "500–6,500 sq ft" },
+      { label: "Formats", value: "500 to 6,500 sq ft" },
       { label: "LFL growth", value: "Double-digit" },
       { label: "Focus", value: "Turnarounds" },
     ],
@@ -67,11 +67,11 @@ const ROLES: Role[] = [
     ],
   },
   {
-    period: "2011 — 2016",
+    period: "2011 to 2016",
     company: "Forest Essentials · Estée Lauder Group",
     note: "Regional Manager, Operations",
     title: "Scaling India's luxury skincare pioneer",
-    location: "India — West & South",
+    location: "India, West & South regions",
     scope: [
       { label: "Revenue", value: "2× regional" },
       { label: "New stores", value: "12" },
@@ -116,7 +116,7 @@ export function Experience() {
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <Reveal>
           <SectionHeading
-            index="01 — Selected Leadership"
+            index="01 · Selected Leadership"
             title="Four chapters, fifteen years"
             kicker="Every role, a bigger footprint: from regional luxury retail to GCC-wide multi-unit command."
           />
@@ -198,17 +198,17 @@ export function Experience() {
                 <span className="font-semibold text-ink">
                   Kaizen Global Services (BPO)
                 </span>{" "}
-                — Team Leader, Operations · 2006–2010
+                · Team Leader, Operations · 2006-2010
               </li>
               <li className="rounded-xl border border-line bg-white/50 px-4 py-3">
                 <span className="font-semibold text-ink">
                   Imercious India (BPO)
                 </span>{" "}
-                — Process Executive · 2004–2006
+                · Process Executive · 2004-2006
               </li>
               <li className="rounded-xl border border-line bg-white/50 px-4 py-3">
-                <span className="font-semibold text-ink">HDFC Bank</span> —
-                Corporate Executive · 2002–2004
+                <span className="font-semibold text-ink">HDFC Bank</span>{" "}
+                · Corporate Executive · 2002-2004
               </li>
             </ul>
           </div>

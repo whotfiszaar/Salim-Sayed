@@ -49,14 +49,14 @@ export function Expertise() {
         <Reveal>
           <div className="flex items-end justify-between gap-6 border-b border-line pb-6">
             <div>
-              <p className="eyebrow text-wine">05 — Expertise</p>
+              <p className="eyebrow text-wine">05 · Expertise</p>
               <h2 className="mt-2 font-display text-3xl font-bold tracking-[-0.03em] text-ink sm:text-4xl lg:text-5xl">
                 A process-driven operating model
               </h2>
             </div>
             <p className="hidden max-w-xs pb-1 text-right text-sm leading-snug text-mute sm:block">
-              Six Sigma Black Belt discipline applied to every store, every
-              market.
+              Six Sigma Black Belt discipline applied to every store and
+              every market.
             </p>
           </div>
         </Reveal>
