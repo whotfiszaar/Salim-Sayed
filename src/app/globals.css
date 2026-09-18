@@ -1,0 +1,220 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+
+  /* ── Portfolio palette (luxury editorial, adapted from reference) ── */
+  --color-cream: #f6f1ee;
+  --color-ink: #2a171b;
+  --color-wine: #763140;
+  --color-wine-deep: #5c2533;
+  --color-mute: #6e5a5e;
+  --color-line: #dfd1d3;
+  --color-tint: #e4bfc7;
+  --color-dot: #e9b3bf;
+}
+
+:root {
+  --background: #f6f1ee;
+  --foreground: #2a171b;
+  --primary: #763140;
+  --primary-foreground: #f6f1ee;
+  --secondary: #e4bfc7;
+  --secondary-foreground: #2a171b;
+  --muted: #efe6e3;
+  --muted-foreground: #6e5a5e;
+  --accent: #e4bfc7;
+  --accent-foreground: #2a171b;
+  --border: #dfd1d3;
+  --input: #dfd1d3;
+  --ring: #763140;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 64px;
+}
+
+body {
+  font-family: var(--font-body), "Helvetica Neue", Arial, sans-serif;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background: var(--color-tint);
+  color: var(--color-ink);
+}
+
+/* ── Typography helpers ─────────────────────────────── */
+.font-display {
+  font-family: var(--font-display), "Helvetica Neue", Arial, sans-serif;
+}
+
+.eyebrow {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+/* ── Scroll reveal ──────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.8s cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ── Marquee ────────────────────────────────────────── */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ── Hero portrait treatment ────────────────────────── */
+.portrait-frame {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-wine);
+}
+
+.portrait-frame img {
+  mix-blend-mode: luminosity;
+  opacity: 0.92;
+}
+
+.portrait-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(118, 49, 64, 0.12) 0%,
+    rgba(92, 37, 51, 0.28) 100%
+  );
+  pointer-events: none;
+}
+
+/* ── Giant image-filled numeral ─────────────────────── */
+.giant-num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(9rem, 26vw, 22rem);
+  line-height: 0.8;
+  letter-spacing: -0.06em;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: cover;
+  background-position: center 20%;
+  background-image: url("/salim-portrait.jpg");
+  filter: saturate(0.35) contrast(1.05);
+  user-select: none;
+}
+
+/* ── Dotted leader line for detail rows ─────────────── */
+.dotline {
+  flex: 1;
+  border-bottom: 1px dotted var(--color-line);
+  transform: translateY(-4px);
+  min-width: 1.5rem;
+}
+
+/* ── Underline link hover ───────────────────────────── */
+.u-link {
+  position: relative;
+  text-decoration: none;
+}
+
+.u-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.u-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* ── Subtle grid paper texture for hero ─────────────── */
+.grid-paper {
+  background-image:
+    linear-gradient(rgba(246, 241, 238, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(246, 241, 238, 0.06) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+/* ── Custom scrollbar ───────────────────────────────── */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-line);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-dot);
+}
