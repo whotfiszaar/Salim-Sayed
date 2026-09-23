@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Instrument_Sans, Figtree } from "next/font/google";
 import "./globals.css";
 
@@ -14,10 +14,17 @@ const figtree = Figtree({
   weight: ["400", "500", "600"],
 });
 
-const SITE_URL = "https://salimsayed.example.com";
+const SITE_URL = "https://salim-sayed.vercel.app";
 const TITLE = "Salim Sayed | Retail Operations Leader in Dubai, UAE";
 const DESCRIPTION =
   "Salim Sayed is a retail operations leader in Dubai with 15+ years of multi-unit store operations, P&L management and market expansion across the GCC and India. 45+ stores launched, AED 130M portfolio, teams of 200+.";
+
+export const viewport: Viewport = {
+  themeColor: "#22223B",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -26,6 +33,21 @@ export const metadata: Metadata = {
     template: "%s | Salim Sayed, Retail Operations Leader",
   },
   description: DESCRIPTION,
+  manifest: "/manifest.webmanifest",
+  icons: {
+    icon: [
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Salim Sayed",
+  },
   keywords: [
     "Salim Sayed",
     "Salim Ahmed Sayed",
@@ -58,9 +80,10 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://salim-sayed.vercel.app/og-image.jpg",
         width: 1200,
         height: 630,
+        type: "image/jpeg",
         alt: "Salim Sayed, Retail Operations Leader based in Dubai, UAE",
       },
     ],
@@ -69,7 +92,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: TITLE,
     description: DESCRIPTION,
-    images: ["/og-image.jpg"],
+    images: ["https://salim-sayed.vercel.app/og-image.jpg"],
   },
   robots: {
     index: true,

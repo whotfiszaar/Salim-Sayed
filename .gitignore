@@ -54,3 +54,4 @@ server.log
 /skills/
 public/uploads_raw/
 public/catalog.html
+.vercel
