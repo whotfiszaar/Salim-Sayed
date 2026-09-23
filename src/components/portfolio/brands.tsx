@@ -47,7 +47,7 @@ export function Brands() {
         <Reveal>
           <div className="flex items-end justify-between gap-6 border-b border-line pb-6">
             <div>
-              <p className="eyebrow text-wine">04 · Houses & Categories</p>
+              <p className="eyebrow text-wine">05 · Houses & Categories</p>
               <h2 className="mt-2 font-display text-3xl font-bold tracking-[-0.03em] text-ink sm:text-4xl lg:text-5xl">
                 Four houses, one standard
               </h2>

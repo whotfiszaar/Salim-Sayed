@@ -32,7 +32,7 @@ export function Contact() {
         <Reveal>
           <div className="flex items-end justify-between gap-6 border-b border-cream/15 pb-6">
             <div>
-              <p className="eyebrow text-tint">09 · Contact</p>
+              <p className="eyebrow text-tint">10 · Contact</p>
               <h2 className="mt-2 font-display text-3xl font-bold tracking-[-0.03em] sm:text-4xl lg:text-5xl">
                 Let&apos;s build the next footprint.
               </h2>

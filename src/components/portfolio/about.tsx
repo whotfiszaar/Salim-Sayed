@@ -8,7 +8,7 @@ export function About() {
         <Reveal>
           <div className="flex items-end justify-between gap-6 border-b border-line pb-6">
             <div>
-              <p className="eyebrow text-wine">06 · About</p>
+              <p className="eyebrow text-wine">07 · About</p>
               <h2 className="mt-2 font-display text-3xl font-bold tracking-[-0.03em] text-ink sm:text-4xl lg:text-5xl">
                 The operator behind the record
               </h2>

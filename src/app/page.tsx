@@ -4,6 +4,7 @@ import { Marquee } from "@/components/portfolio/marquee";
 import { Experience } from "@/components/portfolio/experience";
 import { Expansion } from "@/components/portfolio/expansion";
 import { Impact } from "@/components/portfolio/impact";
+import { Gallery } from "@/components/portfolio/gallery";
 import { Brands } from "@/components/portfolio/brands";
 import { Expertise } from "@/components/portfolio/expertise";
 import { About } from "@/components/portfolio/about";
@@ -106,6 +107,7 @@ export default function PortfolioPage() {
         <Experience />
         <Expansion />
         <Impact />
+        <Gallery />
         <Brands />
         <Expertise />
         <About />

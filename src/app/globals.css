@@ -18,31 +18,33 @@
   --color-primary-foreground: var(--primary-foreground);
   --color-primary: var(--primary);
 
-  /* ── Portfolio palette (luxury editorial, adapted from reference) ── */
-  --color-cream: #f6f1ee;
-  --color-ink: #2a171b;
-  --color-wine: #763140;
-  --color-wine-deep: #5c2533;
-  --color-mute: #6e5a5e;
-  --color-line: #dfd1d3;
-  --color-tint: #e4bfc7;
-  --color-dot: #e9b3bf;
+  /* ── Portfolio palette (Urban Chic luxury editorial) ── */
+  --color-cream: #F8F5F2;
+  --color-ink: #22223B;
+  --color-slate: #4A4E69;
+  --color-wine: #4A4E69;
+  --color-wine-deep: #22223B;
+  --color-mute: #585566;
+  --color-line: #E2D9D4;
+  --color-tint: #C9ADA7;
+  --color-taupe: #9A8C98;
+  --color-dot: #9A8C98;
 }
 
 :root {
-  --background: #f6f1ee;
-  --foreground: #2a171b;
-  --primary: #763140;
-  --primary-foreground: #f6f1ee;
-  --secondary: #e4bfc7;
-  --secondary-foreground: #2a171b;
-  --muted: #efe6e3;
-  --muted-foreground: #6e5a5e;
-  --accent: #e4bfc7;
-  --accent-foreground: #2a171b;
-  --border: #dfd1d3;
-  --input: #dfd1d3;
-  --ring: #763140;
+  --background: #F8F5F2;
+  --foreground: #22223B;
+  --primary: #4A4E69;
+  --primary-foreground: #F8F5F2;
+  --secondary: #C9ADA7;
+  --secondary-foreground: #22223B;
+  --muted: #EFE8E4;
+  --muted-foreground: #585566;
+  --accent: #C9ADA7;
+  --accent-foreground: #22223B;
+  --border: #E2D9D4;
+  --input: #E2D9D4;
+  --ring: #4A4E69;
 }
 
 html {
@@ -124,7 +126,7 @@ body {
 .portrait-frame {
   position: relative;
   overflow: hidden;
-  background: var(--color-wine);
+  background: var(--color-slate);
 }
 
 .portrait-frame img {
@@ -138,8 +140,8 @@ body {
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(118, 49, 64, 0.12) 0%,
-    rgba(92, 37, 51, 0.28) 100%
+    rgba(74, 78, 105, 0.12) 0%,
+    rgba(34, 34, 59, 0.32) 100%
   );
   pointer-events: none;
 }

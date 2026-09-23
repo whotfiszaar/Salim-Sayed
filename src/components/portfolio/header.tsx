@@ -7,6 +7,7 @@ const NAV_ITEMS = [
   { href: "#experience", label: "Experience" },
   { href: "#expansion", label: "Expansion" },
   { href: "#impact", label: "Impact" },
+  { href: "#gallery", label: "Gallery" },
   { href: "#brands", label: "Brands" },
   { href: "#insights", label: "Insights" },
   { href: "#about", label: "About" },
