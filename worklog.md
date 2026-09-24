@@ -72,3 +72,23 @@ Stage Summary:
 - Implemented minimalist, high-end Leadership Gallery with clean filters and lightbox
 - Local dev server active at http://localhost:3000
 
+---
+Task ID: 4
+Agent: Antigravity
+Task: Round 4 updates: Photo curation refinements based on WhatsApp feedback
+
+Work Log:
+- Removed "Downtown Dubai" photo (dubai-executive-presence.jpg) per user instruction ("I think we can remove this, because sirf Burj Khalifa dikha rahe hai him")
+- Removed "Frontline Associates" repeated uniform photo (frontline-retail-staff.jpg) per user instruction ("This also we can remove, repeat hai")
+- Added 3 high-priority curated photos requested by user:
+  1. Annabelle Launch Team in front of green flower wall (annabelle-launch-team.jpg, 1024x768)
+  2. Annabelle Store Operations Team at counter (annabelle-counter-team.jpg, 1024x769)
+  3. Store Opening Ribbon Cutting Ceremony with Emirati VIPs and balloons (ribbon-cutting-ceremony.jpg, 800x800)
+- Optimized and saved all 3 photos into public/gallery/ and updated GALLERY_ITEMS in gallery.tsx
+- Committed and pushed commit b64ae50 to GitHub (whotfiszaar/Salim-Sayed, branch main), triggering automatic production deployment on Vercel
+
+Stage Summary:
+- Cleaned up gallery composition: removed 2 redundant/distracting shots, added 3 core operational & launch milestone photos
+- GitHub and Vercel synchronized with latest updates
+
+
